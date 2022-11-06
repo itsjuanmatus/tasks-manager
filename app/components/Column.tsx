@@ -67,11 +67,13 @@ export default function Column({
                       <div className="flex items-center justify-between w-full">
                         <div className="flex items-center">
                           <Image
+                            priority
                             src={girl1}
                             alt="girl 1"
                             className="object-cover h-7 w-7 rounded-full border-[1px] aspect-square"
                           />
                           <Image
+                            priority
                             src={girl2}
                             alt="girl 1"
                             className="object-cover h-7 w-7 rounded-full border-[1px] border-white aspect-square -ml-2"

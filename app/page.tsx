@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Fragment } from "react";
 import { AiOutlineFilter, AiOutlineUserAdd } from "react-icons/ai";
@@ -22,21 +21,25 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex items-center border-r-[#f4f5f8] border-r-2 pr-5">
                 <Image
+                  priority
                   alt="man-photoshoot"
                   src={man1Pic}
                   className="rounded-full aspect-square object-cover h-8 w-8 border-white border-2"
                 />
                 <Image
+                  priority
                   alt="man-2-photoshoot"
                   src={man2Pic}
                   className="rounded-full aspect-square object-cover h-8 w-8 border-white border-2 -ml-2"
                 />
                 <Image
+                  priority
                   alt="girl-photoshoot"
                   src={girl1Pic}
                   className="rounded-full aspect-square object-cover h-8 w-8 border-white border-2 -ml-2"
                 />
                 <Image
+                  priority
                   alt="girl-2-photoshoot"
                   src={girl2Pic}
                   className="rounded-full aspect-square object-cover h-8 w-8 border-white border-2 -ml-2"

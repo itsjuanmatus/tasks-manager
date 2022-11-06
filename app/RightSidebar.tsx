@@ -44,6 +44,7 @@ export default function RightSidebar({
       <div className="flex items-center justify-between my-3">
         <div className="flex items-center gap-x-2">
           <Image
+            priority
             className="rounded-full h-8 w-8 object-cover aspect-square"
             src={girl1Pic}
             alt="girl image"
