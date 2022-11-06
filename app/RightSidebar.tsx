@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { BiChevronsRight } from "react-icons/bi";
-import girl1Pic from "../public/girl-1.jpg";
+import girl1Pic from "../public/.jpg";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Draggable, Droppable } from "react-beautiful-dnd";
-import girl1 from "../../public/girl-1.jpg";
+import girl1 from "../../public/girl-1.png";
 import girl2 from "../../public/girl-2.jpg";
 import Image from "next/image";
 import { InitialDataType } from "../../types/InitialDataType";

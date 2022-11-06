@@ -4,7 +4,7 @@ import { AiOutlineFilter, AiOutlineUserAdd } from "react-icons/ai";
 import { BiShareAlt } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 import TasksGrid from "./components/TasksGrid";
-import girl1Pic from "../public/girl-1.jpg";
+import girl1Pic from "../public/girl-1.png";
 import girl2Pic from "../public/girl-2.jpg";
 import man1Pic from "../public/man-1.jpg";
 import man2Pic from "../public/man-2.jpg";
