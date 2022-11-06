@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCheckCircleFill, BsStopwatch } from "react-icons/bs";
 
-export default function Sidebar() {
+export default function LeftSidebar() {
   return (
     <nav className="bg-[#fbfdff] h-screen col-span-1 flex flex-col items-center py-4">
       <h1 className="font-300 mb-12">Aventik</h1>
