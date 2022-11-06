@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <Fragment>
       <SearchBar />
-      <div className="w-[95%] mx-auto mt-4 flex items-center h-[12vh]">
+      <div className="max-w-[95%] md:mx-auto mt-4 flex items-center h-[12vh] max-w-100vw">
         <div className="flex flex-col gap-y-2 w-full">
           <h1 className="font-bold text-[#233a57]">My Tasks</h1>
           <div className="flex items-center justify-between w-full">
@@ -47,7 +47,7 @@ export default function Home() {
                 <AiOutlineUserAdd size={15} color="#98a4b8" />
               </div>
             </div>
-            <div className="flex items-center gap-x-2">
+            <div className="hidden items-center gap-x-2 md:flex">
               <div className="flex items-center justify-center h-9 w-9 border rounded-md">
                 <BiShareAlt size={15} color="#98a4b8" />
               </div>

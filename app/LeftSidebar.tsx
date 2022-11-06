@@ -11,7 +11,7 @@ import {HiOutlinePresentationChartBar} from "react-icons/hi";
 
 export default function LeftSidebar() {
   return (
-    <nav className="bg-[#fbfdff] h-screen col-span-1 flex flex-col items-center py-4">
+    <nav className="bg-[#fbfdff] h-screen col-span-1 flex-col items-center py-4 hidden md:flex">
       <h1 className="font-300 mb-12">Aventik</h1>
       <div className="grid w-full gap-y-8">
         <div className="flex items-center w-full border-r-2 h-7 border-r-[#317ef0] pl-5">

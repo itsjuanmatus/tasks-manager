@@ -91,7 +91,7 @@ export default function TasksGrid() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="flex items-start gap-x-4 mt-4 max-w-[95%] mx-auto h-[73vh]">
+      <div className="flex items-start gap-x-4 mt-4 md:max-w-[95%] md:mx-auto h-[73vh] max-w-[100vw] overflow-x-auto pr-[10vw] md:pr-0">
         {columnsState.columnOrder.map((columnId) => {
           const column = columnsState.columns[columnId];
           const tasks = column.taskIds.map(

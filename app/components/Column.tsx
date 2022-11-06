@@ -31,7 +31,7 @@ export default function Column({
         <Droppable droppableId={column.id}>
           {(provided) => (
             <div
-              className="flex flex-col gap-y-2 w-full bg-[#f5f6fa] p-2 rounded-md items-start h-full overflow-y-auto"
+              className="flex flex-col gap-y-2 w-full bg-[#f5f6fa] p-2 rounded-md items-start h-full overflow-y-auto min-w-[70vw] md:min-w-[auto]"
               ref={provided.innerRef}
               {...provided.droppableProps}
             >
@@ -43,7 +43,7 @@ export default function Column({
                 >
                   {(provided, snapshot) => (
                     <div
-                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-3"
+                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-3 "
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
