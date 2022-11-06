@@ -1,19 +1,16 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
+import { initialData } from "../data/initialData";
+import { InitialDataType } from "../../types/InitialDataType";
 
 export default function TasksGrid() {
   const [columnsState, setColumnsState] = useState(initialData);
 
   const reorderColumnList = (
-    sourceCol: {
-      id: string;
-      title: string;
-      taskIds: number[];
-      color: string;
-    },
+    sourceCol: InitialDataType['columns'][0],
     startIndex: number,
     endIndex: number
   ) => {
@@ -94,68 +91,15 @@ export default function TasksGrid() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="flex items-start gap-x-4 mt-4 w-[95%] mx-auto">
+      <div className="flex items-start gap-x-4 mt-4 max-w-[95%] mx-auto h-[73vh]">
         {columnsState.columnOrder.map((columnId) => {
           const column = columnsState.columns[columnId];
           const tasks = column.taskIds.map(
             (taskId) => columnsState.tasks[taskId]
           );
-
           return <Column key={column.id} column={column} tasks={tasks} />;
         })}
       </div>
     </DragDropContext>
   );
 }
-
-
-
-const initialData = {
-  tasks: {
-    1: { id: 1, content: "Configure Next.js application" },
-    2: { id: 2, content: "Configure Next.js and tailwind " },
-    3: { id: 3, content: "Create sidebar navigation menu" },
-    4: { id: 4, content: "Create page footer" },
-    5: { id: 5, content: "Create page navigation menu" },
-    6: { id: 6, content: "Create page layout" },
-  },
-  columns: {
-    "column-1": {
-      id: "column-1",
-      title: "Todo",
-      taskIds: [1, 2, 3, 4, 5, 6],
-      color: "#7a8999",
-    },
-    "column-2": {
-      id: "column-2",
-      title: "Progress",
-      taskIds: [],
-      color: "#6abeb1",
-    },
-    "column-3": {
-      id: "column-3",
-      title: "Review",
-      taskIds: [],
-      color: "#f4bdb2",
-    },
-    "column-4": {
-      id: "column-4",
-      title: "Done",
-      taskIds: [],
-      color: "#6995f0", 
-    },
-  },
-  // Facilitate reordering of the columns
-  columnOrder: ["column-1", "column-2", "column-3", "column-4"],
-} as {
-  tasks: { [key: string]: { id: number; content: string } };
-  columns: {
-    [key: string]: {
-      id: string;
-      title: string;
-      taskIds: number[];
-      color: string;
-    };
-  };
-  columnOrder: string[];
-};

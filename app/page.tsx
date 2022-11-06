@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <Fragment>
       <SearchBar />
-      <div className="w-[95%] mx-auto mt-4 flex items-center">
+      <div className="w-[95%] mx-auto mt-4 flex items-center h-[12vh]">
         <div className="flex flex-col gap-y-2 w-full">
-          <h1 className="font-bold text-[#233a57]">My Task</h1>
+          <h1 className="font-bold text-[#233a57]">My Tasks</h1>
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center">
               <div className="flex items-center border-r-[#f4f5f8] border-r-2 pr-5">
