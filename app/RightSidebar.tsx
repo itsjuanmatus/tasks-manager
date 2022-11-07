@@ -5,6 +5,8 @@ import girl1Pic from "../public/girl-1.png";
 import girl2Pic from "../public/girl-2.jpg";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
+import { BarChart } from "@tremor/react";
+import { chartdata, dataFormatter } from "./data/barChartData";
 
 import { IoNotificationsOutline } from "react-icons/io5";
 
@@ -33,7 +35,7 @@ export default function RightSidebar({
 
   return (
     <div
-      className="bg-white h-screen col-span-2 w-full flex-col p-4 hidden md:flex overflow-y-auto"
+      className="bg-white h-screen col-span-2 w-full flex-col p-4 hidden md:flex overflow-y-auto overflow-x-hidden"
       style={{
         transition: "all 0.3s ease-in-out",
         width: show ? "100%" : "0",
@@ -140,8 +142,22 @@ export default function RightSidebar({
             </p>
             <div className="flex items-center justify-between mt-3">
               <h3 className="text-md font-medium">$42,200</h3>
-              <p className="text-[0.625rem] text-[#727c8e] font-[300]">Event output</p>
+              <p className="text-[0.625rem] text-[#727c8e] font-[300]">
+                Event output
+              </p>
             </div>
+            {/*             
+            <BarChart
+              data={chartdata}
+              dataKey="name"
+              categories={["Lorem Ipsum"]}
+              colors={["blue"]}
+              valueFormatter={dataFormatter}
+              marginTop="mt-5"
+              height="h-36"
+              showXAxis={false}
+              showYAxis={false}
+            /> */}
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { Poppins } from "@next/font/google";
 import { useState } from "react";
 import { BiChevronsLeft } from "react-icons/bi";
+import SearchBar from "./components/SearchBar";
 import "./globals.css";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
@@ -51,6 +52,7 @@ export default function RootLayout({
           >
             <BiChevronsLeft onClick={() => setShowRightSidebar(true)} />
           </div>
+          <SearchBar />
           {children}
         </div>
         <RightSidebar show={showRightSidebar} setShow={setShowRightSidebar} />

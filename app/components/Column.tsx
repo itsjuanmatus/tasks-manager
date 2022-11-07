@@ -16,7 +16,7 @@ export default function Column({
     <Fragment>
       <div className="flex flex-col gap-y-2 w-full h-full">
         <div className="flex flex-col w-full">
-          <p className="text-xs">{column.title}</p>
+          <p className="text-xs text-[#727c8e]">{column.title}</p>
           <hr
             className="w-full mt-2 mx-auto h-[2px] border-[1.5px] rounded-full"
             style={{
@@ -75,9 +75,10 @@ export default function Column({
                             className="object-cover h-7 w-7 rounded-full border-[1px] border-white aspect-square -ml-2"
                           />
                         </div>
-                        <div className="flex items-center p-2 justify-center rounded-md"
+                        <div
+                          className="flex items-center p-2 justify-center rounded-md"
                           style={{
-                            backgroundColor: `${task.status.color}50`
+                            backgroundColor: `${task.status.color}50`,
                           }}
                         >
                           <p

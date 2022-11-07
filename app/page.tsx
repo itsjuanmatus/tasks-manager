@@ -13,7 +13,6 @@ import SearchBar from "./components/SearchBar";
 export default function Home() {
   return (
     <Fragment>
-      <SearchBar />
       <div className="max-w-[95%] md:mx-auto mt-4 flex items-center h-[12vh] max-w-100vw">
         <div className="flex flex-col gap-y-2 w-full">
           <h1 className="font-bold text-[#233a57]">My Tasks</h1>
