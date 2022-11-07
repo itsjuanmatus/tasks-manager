@@ -35,7 +35,7 @@ export default function LeftSidebar() {
   ];
   return (
     <nav className="bg-[#fbfdff] h-screen col-span-1 flex-col items-center py-4 hidden md:flex">
-      <h1 className="font-300 mb-12">Aventik</h1>
+      <h1 className="font-300 mb-12 select-none">Aventik</h1>
       <div className="grid w-full gap-y-8">
         {/*    <Link
           className="flex items-center w-full border-r-2 h-7 border-r-[#317ef0] pl-5"
@@ -53,7 +53,7 @@ export default function LeftSidebar() {
         </div> */}
         {links.map((link) => (
           <Link
-            className={`flex items-center w-full border-r-2 h-7 ${
+            className={`flex items-center w-full border-r-2 h-7 select-none ${
               pathname === link.href
                 ? "border-r-[#317ef0]"
                 : "border-r-[#fbfdff]"
@@ -77,7 +77,7 @@ export default function LeftSidebar() {
         ))}
       </div>
       <hr className="w-[85%] border-[#e7e8f0] mt-8 mx-auto mb-8" />
-      <div className="grid w-full gap-y-8 cursor-not-allowed">
+      <div className="grid w-full gap-y-8 cursor-not-allowed select-none">
         <div className="flex items-center w-full px-5">
           <TbHeadphones className="text-[#727c8e] mr-2" size={15} />
           <p className="font-300 text-xs text-[#727c8e]">Support</p>

@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
 import { BiChevronsRight } from "react-icons/bi";
 import girl1Pic from "../public/girl-1.png";
 import girl2Pic from "../public/girl-2.jpg";
-import { DayPicker } from "react-day-picker";
-import "react-day-picker/dist/style.css";
-import { BarChart } from "@tremor/react";
-import { chartdata, dataFormatter } from "./data/barChartData";
 
 import { IoNotificationsOutline } from "react-icons/io5";
 
@@ -88,7 +86,7 @@ export default function RightSidebar({
         />
       </div>
       <hr className="my-4" />
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 pb-4">
         <h3 className="text-sm font-semibold">Activity</h3>
         <div className="flex flex-col w-full">
           <div className="flex items-center justify-between">
@@ -146,18 +144,6 @@ export default function RightSidebar({
                 Event output
               </p>
             </div>
-            {/*             
-            <BarChart
-              data={chartdata}
-              dataKey="name"
-              categories={["Lorem Ipsum"]}
-              colors={["blue"]}
-              valueFormatter={dataFormatter}
-              marginTop="mt-5"
-              height="h-36"
-              showXAxis={false}
-              showYAxis={false}
-            /> */}
           </div>
         </div>
       </div>

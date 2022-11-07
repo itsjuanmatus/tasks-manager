@@ -41,7 +41,7 @@ export const performance = [
   },
   {
     date: "2021-03-15",
-    Sales: 88222,
+    Sales: 64222,
     Profit: 682,
     Customers: 682,
   },
@@ -53,7 +53,7 @@ export const performance = [
   },
   {
     date: "2021-03-17",
-    Sales: 88242,
+    Sales: 64242,
     Profit: 62282,
     Customers: 682,
   },

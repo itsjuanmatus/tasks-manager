@@ -6,6 +6,7 @@ export interface Task {
     type: "Urgent" | "Priority" | "Normal" | "Low" | "None";
     color: string;
   };
+  description?: string;
 }
 
 export interface InitialDataType {

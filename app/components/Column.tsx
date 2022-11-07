@@ -58,7 +58,7 @@ export default function Column({
                         {task.content}
                       </h3>
                       <p className="text-[0.7rem] font-[300] text-[#727c8e]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        {task.description}
                       </p>
                       <div className="flex items-center justify-between w-full">
                         <div className="flex items-center">

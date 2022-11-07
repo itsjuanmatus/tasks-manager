@@ -36,7 +36,9 @@ export default function RootLayout({
       <body className="bg-white grid grid-cols-8 w-full h-screen max-h-screen overflow-hidden max-w-[100vw]">
         <LeftSidebar />
         <div
-          className={`bg-white max-h-screen border-r-[1px] border-r-[#f3f3f4] w-full flex flex-col p-4 relative transition-all ease-in-out duration-300 col-span-8 md:col-span-5 overflow-hidden`}
+          className={`bg-white max-h-screen border-r-[1px] border-r-[#f3f3f4] 
+          w-full flex flex-col p-4 relative transition-all ease-in-out
+          duration-300 col-span-8 md:col-span-5 overflow-hidden`}
           style={{
             width: showRightSidebar ? "100%" : "calc(140%)",
             transition: "all 0.3s ease-in-out",

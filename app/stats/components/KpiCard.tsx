@@ -14,7 +14,7 @@ export default function KpiCard() {
     <Card maxWidth="max-w-lg">
       <Flex alignItems="items-start">
         <Block>
-          <Text>Sales</Text>
+          <Text height="h-6">Sales</Text>
           <Metric>$ 12,699</Metric>
         </Block>
         <BadgeDelta deltaType="moderateIncrease" text="13.2%" />
