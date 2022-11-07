@@ -39,7 +39,7 @@ export default function Column({
                 >
                   {(provided, snapshot) => (
                     <div
-                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-4"
+                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-3"
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
@@ -57,7 +57,7 @@ export default function Column({
                       <h3 className="text-sm font-semibold text-[#55677e]">
                         {task.content}
                       </h3>
-                      <p className="text-xs font-[300] text-[#727c8e]">
+                      <p className="text-[0.7rem] font-[300] text-[#727c8e]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       </p>
                       <div className="flex items-center justify-between w-full">
