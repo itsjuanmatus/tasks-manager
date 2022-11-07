@@ -1,5 +1,17 @@
+export interface Task {
+  id: number;
+  content: string;
+  icon: string;
+  status: {
+    type: "Urgent" | "Priority" | "Normal" | "Low" | "None";
+    color: string;
+  };
+}
+
 export interface InitialDataType {
-  tasks: { [key: string]: { id: number; content: string; icon: string } };
+  tasks: {
+    [key: string]: Task;
+  };
   columns: {
     [key: string]: {
       id: string;

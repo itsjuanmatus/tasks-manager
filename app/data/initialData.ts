@@ -2,12 +2,42 @@ import { InitialDataType } from "../../types/InitialDataType";
 
 export const initialData: InitialDataType = {
   tasks: {
-    1: { id: 1, content: "Configure Next.js application", icon: "✨" },
-    2: { id: 2, content: "Configure Next.js and tailwind ", icon: "🔧" },
-    3: { id: 3, content: "Create sidebar navigation menu", icon: "🚧" },
-    4: { id: 4, content: "Create page footer", icon: "🚧" },    
-    5: { id: 5, content: "Create page navigation menu" , icon: "📏" },
-    6: { id: 6, content: "Create page layout" , icon: "💄" },
+    1: {
+      id: 1,
+      content: "Configure Next.js application",
+      icon: "✨",
+      status: { type: "Urgent", color: "#e8b7b0" },
+    },
+    2: {
+      id: 2,
+      content: "Configure Next.js and tailwind ",
+      icon: "🔧",
+      status: { type: "Priority", color: "#68b6f0" },
+    },
+    3: {
+      id: 3,
+      content: "Create sidebar navigation menu",
+      icon: "🚧",
+      status: { type: "Normal", color: "#5daca0" },
+    },
+    4: {
+      id: 4,
+      content: "Create page footer",
+      icon: "🚧",
+      status: { type: "Low", color: "#2aa18e" },
+    },
+    5: {
+      id: 5,
+      content: "Create page navigation menu",
+      icon: "📏",
+      status: { type: "None", color: "#68788c" },
+    },
+    6: {
+      id: 6,
+      content: "Create page layout",
+      icon: "💄",
+      status: { type: "None", color: "#68788c" },
+    },
   },
   columns: {
     "column-1": {

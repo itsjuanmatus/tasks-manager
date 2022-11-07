@@ -3,18 +3,14 @@ import { Draggable, Droppable } from "react-beautiful-dnd";
 import girl1 from "../../public/girl-1.png";
 import girl2 from "../../public/girl-2.jpg";
 import Image from "next/image";
-import { InitialDataType } from "../../types/InitialDataType";
+import { InitialDataType, Task } from "../../types/InitialDataType";
 
 export default function Column({
   column,
   tasks,
 }: {
   column: InitialDataType["columns"][0];
-  tasks: {
-    id: number;
-    content: string;
-    icon: string;
-  }[];
+  tasks: Task[];
 }) {
   return (
     <Fragment>
@@ -43,7 +39,7 @@ export default function Column({
                 >
                   {(provided, snapshot) => (
                     <div
-                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-3 "
+                      className="flex flex-col w-full bg-white min-h-40 rounded-md p-4 gap-y-4"
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
@@ -61,7 +57,7 @@ export default function Column({
                       <h3 className="text-sm font-semibold text-[#55677e]">
                         {task.content}
                       </h3>
-                      <p className="text-xs text-[#dddee2]">
+                      <p className="text-xs font-[300] text-[#727c8e]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       </p>
                       <div className="flex items-center justify-between w-full">
@@ -78,6 +74,20 @@ export default function Column({
                             alt="girl 1"
                             className="object-cover h-7 w-7 rounded-full border-[1px] border-white aspect-square -ml-2"
                           />
+                        </div>
+                        <div className="flex items-center p-2 justify-center rounded-md"
+                          style={{
+                            backgroundColor: `${task.status.color}50`
+                          }}
+                        >
+                          <p
+                            className="text-[0.625rem] font-[500] cursor-pointer"
+                            style={{
+                              color: task.status.color,
+                            }}
+                          >
+                            {task.status.type}
+                          </p>
                         </div>
                       </div>
                     </div>
