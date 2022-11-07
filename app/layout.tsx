@@ -17,7 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [showRightSidebar, setShowRightSidebar] = useState(true);
+  const [showRightSidebar, setShowRightSidebar] = useState(false);
 
   return (
     <html
